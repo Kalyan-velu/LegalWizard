@@ -1,12 +1,12 @@
-import Hero from './components/hero'
-
+import Hero from "./components/hero";
+import About from "./components/about";
 function App() {
-
   return (
-    <div className="justify-center items-center h-screen">
-      <Hero/>
+    <div className="items-center justify-center">
+      <Hero />
+      <About />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

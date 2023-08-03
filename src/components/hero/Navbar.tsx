@@ -1,21 +1,32 @@
-import Logo from '/assests/Logo.png'
+import Logo from "/assests/Logo.png";
 const Navbar = () => {
-  const links=["Home","About","Contact","Pricing"]
+  const links = ["Home", "About", "Contact", "Pricing"];
   return (
-    <nav className='bg-transparent h-auto md:h-[5vh] text-white flex justify-around pt-6 pb-6 md:pt-12 md:pb-12 items-center w-[100%]'>
-        <ul className='hidden md:flex md:justify-evenly md:w-[20%]'>
-          <a href="#home" className='hover:text-gray'>Home</a>
-          <a href="#about" className='hover:text-gray'>About</a>
-          <a href="#contact" className='hover:text-gray'>Contact</a>
-          <a href="#pricing" className='hover:text-gray'>Pricing</a>
-        </ul>
-      <img className='justify-self-stretch ' src={Logo} alt="W" />
-      <div className='flex w-[50%] md:w-[20%] md:w-[10%] h-[calc(auto-1rem)] justify-around items-center'>
-        <button className='border-solid border-2 text-black px-4 py-2 rounded-2xl'>Sign up</button>
-        <button className='bg-orange hover:bg-orange-500/[50] text-black px-4 py-2 rounded-2xl'>Log in</button>
+    <nav className="flex h-auto w-[100%] items-center justify-around bg-transparent pb-6 pt-6 text-white md:h-[5vh] md:pb-12 md:pt-12">
+      <ul className="hidden md:flex md:w-[20%] md:justify-evenly">
+        {links.map((link) => (
+          <>
+            <a
+              key={link}
+              href={`#${link?.toLocaleLowerCase()}`}
+              className="hover:text-gray"
+            >
+              {link}
+            </a>
+          </>
+        ))}
+      </ul>
+      <img className="justify-self-stretch " src={Logo} alt="W" />
+      <div className="flex h-[calc(auto-1rem)] w-[50%] items-center justify-around sm:w-[20%] md:w-[15%]">
+        <button className="text-black rounded-full border-2 border-solid px-4 py-2">
+          Sign up
+        </button>
+        <button className="hover:bg-orange-500/[50] text-black rounded-full bg-orange px-4 py-2">
+          Log in
+        </button>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
