@@ -1,11 +1,11 @@
-const About = () => {
+const HeroDetails = () => {
   return (
-    <div className="prose lg:prose-xl flex w-full items-center justify-center">
-      <div className="m-auto flex w-[80%] flex-col gap-3 text-center text-gray-dark sm:w-[40%]">
-        <h2 className=" text-3xl font-bold">
+    <div className="prose lg:prose-xl mx-auto my-12 flex w-[100%] w-full items-center justify-center md:w-[50%]">
+      <div className="justify center flex w-[80%] flex-col gap-3 text-center text-gray-dark md:w-[80%]">
+        <h2 className="text-3xl font-bold">
           Advanced Ai tool to create a legal brief like human
         </h2>
-        <p className="tracking-wider">
+        <p className="text-lg tracking-wider">
           Writing legal brief should not be a tedius and time consuming task.
           That's why Legal Wizard created an AI-powered solution that make
           writing briefs feel like magic. Our system streamlines the writing
@@ -14,7 +14,7 @@ const About = () => {
           secret weapon in the courtroom, and experience the magic yourself.
         </p>
 
-        <button className="hover:bg-orange-500/[50] m-auto w-[50%] rounded-full bg-orange px-4 py-2 text-white">
+        <button className="m-auto rounded-full bg-orange-500 px-4 py-2 text-white hover:bg-orange-500/[50]">
           Get Started
         </button>
       </div>
@@ -22,4 +22,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default HeroDetails;

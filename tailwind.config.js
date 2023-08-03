@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme'
 export default {
   content: [
     "./index.html",
@@ -16,22 +17,36 @@ export default {
         500: '#28017c'
       },
       'portgore': '#3c4169',
-      'blue': '#1fb6ff',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
+      'blue': {
+        100: '#f7f9ff',
+        500: '#1fb6ff',
+      },
+      'purple': {
+        500: '#7e5bef'
+      },
+      'pink': { 500: '#ff49db' },
+      'orange': {
+        500: '#f97316'
+      },
       'green': '#13ce66',
       'yellow': '#ffc82c',
       'gray-dark': '#273444',
       'gray': '#8492a6',
       'gray-light': '#d3dce6',
-      'midnight': '#121063',
+      'midnight-blue': {
+        100: '#121063',
+        300: '#221F6D',
+        500: '#1b1464',
+      }
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
+      sans: ['Alata', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      fontFamily: {
+        'sans': ['Alata', ...defaultTheme.fontFamily.sans],
+      },
       gridTemplateColumns: {
         // Simple 16 column grid
         '16': 'repeat(16, minmax(0, 1fr))',

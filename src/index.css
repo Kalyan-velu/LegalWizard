@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .divider {
+    height: 0.11rem;
+    border-radius: 10%;
+    background: linear-gradient(to right, #f7f9ff, #1fb6ff, #f7f9ff);
+  }
+}

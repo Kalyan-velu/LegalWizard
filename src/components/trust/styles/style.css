@@ -1,0 +1,37 @@
+@tailwind components;
+
+@layer components {
+  .trustee {
+    height: 100vh;
+    /* position: relative; */
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #34087a;
+  }
+  /* 
+  @media (max-width: 348px) {
+    .trustee {
+      height: 100vh;
+      background: linear-gradient(to right, #2c1078, #34087a);
+      position: relative;
+      overflow: hidden;
+      clip-path: circle(180vh at 50% -90vh);
+    }
+  } */
+
+  #input[type="text"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  #input[type="text"]:focus {
+    outline: none;
+  }
+
+  #input[type="text"]::placeholder {
+    color: #9ca3af;
+  }
+}
