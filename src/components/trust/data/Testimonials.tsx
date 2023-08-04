@@ -6,6 +6,7 @@ interface Testimonial {
   id: number;
   name: string;
   designation: string;
+  header: string;
   content: string;
   avatarUrl: string;
 }
@@ -19,19 +20,66 @@ interface FirmDataItem {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "CEO",
+    name: "Marvin McKinney",
+    designation: "UI UX Designer",
+    header: "If I could give a 7star Ratin I would...",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius lacinia nisi, id scelerisque tellus pellentesque a. Nunc eget justo et quam gravida eleifend.",
-    avatarUrl: "/path/to/avatar/john-doe.jpg",
+    avatarUrl: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     id: 2,
-    name: "Jane Smith",
-    designation: "Marketing Manager",
+    name: "Arlene McCoy",
+    designation: "UI UX Designer",
+    header: "Best Company AI...",
     content:
       "In hac habitasse platea dictumst. Nulla nec risus libero. Vestibulum nec rhoncus orci. Curabitur dapibus tincidunt tristique. Phasellus lacinia ex nec auctor faucibus.",
-    avatarUrl: "/path/to/avatar/jane-smith.jpg",
+    avatarUrl: "https://randomuser.me/api/portraits/men/3.jpg",
+  },
+  {
+    id: 3,
+    name: "Courtney Henry",
+    designation: "UI UX Designer",
+    header: "Must have tool for Creative Agency...",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius lacinia nisi, id scelerisque tellus pellentesque a. Nunc eget justo et quam gravida eleifend.",
+    avatarUrl: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
+  {
+    id: 4,
+    name: "Jacob Jones",
+    designation: "UI UX Designer",
+    header: "Amazing And Efficient...",
+    content:
+      "In hac habitasse platea dictumst. Nulla nec risus libero. Vestibulum nec rhoncus orci. Curabitur dapibus tincidunt tristique. Phasellus lacinia ex nec auctor faucibus.",
+    avatarUrl: "https://randomuser.me/api/portraits/men/1.jpg",
+  },
+  {
+    id: 5,
+    name: "Jane Smith",
+    designation: "Marketing Manager",
+    header: "Amazing and Efficient...",
+    content:
+      "In hac habitasse platea dictumst. Nulla nec risus libero. Vestibulum nec rhoncus orci. Curabitur dapibus tincidunt tristique. Phasellus lacinia ex nec auctor faucibus.",
+    avatarUrl: "https://randomuser.me/api/portraits/women/1.jpg",
+  },
+  {
+    id: 6,
+    name: "John Doe",
+    designation: "CEO",
+    header: "Best Company AI...",
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius lacinia nisi, id scelerisque tellus pellentesque a. Nunc eget justo et quam gravida eleifend.",
+    avatarUrl: "https://randomuser.me/api/portraits/men/2.jpg",
+  },
+  {
+    id: 7,
+    name: "Jane Smith",
+    designation: "Marketing Manager",
+    header: "Best Company AI...",
+    content:
+      "In hac habitasse platea dictumst. Nulla nec risus libero. Vestibulum nec rhoncus orci. Curabitur dapibus tincidunt tristique. Phasellus lacinia ex nec auctor faucibus.",
+    avatarUrl: "https://randomuser.me/api/portraits/women/1.jpg",
   },
   // Add more testimonials here...
 ];

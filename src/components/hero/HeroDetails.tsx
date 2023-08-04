@@ -5,7 +5,7 @@ const HeroDetails = () => {
         <h2 className="text-3xl font-bold">
           Advanced Ai tool to create a legal brief like human
         </h2>
-        <p className="text-lg tracking-wider">
+        <p className="text-lg leading-loose">
           Writing legal brief should not be a tedius and time consuming task.
           That's why Legal Wizard created an AI-powered solution that make
           writing briefs feel like magic. Our system streamlines the writing

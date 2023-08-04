@@ -1,5 +1,6 @@
 import React from "react";
 import { Visions } from "./data";
+
 const Visionaries = () => {
   return (
     <section

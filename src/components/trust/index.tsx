@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles/style.css";
+import Testimonials from "./Testimonials";
 import { firmData } from "./data/Testimonials";
+
 const Trustee = () => {
   return (
     <section className="trustee">
@@ -26,21 +28,7 @@ const Trustee = () => {
           ))}
         </div>
       </div>
-      {/* <div>
-        {testimonials.map((testimonial) => (
-          <React.Fragment key={testimonial.name}>
-            <div className="flex flex-col justify-center space-y-5">
-              <div className="flex justify-center">
-                <img
-                  src={testimonial.avatarUrl}
-                  alt={testimonial.name}
-                  className="w-[4rem] text-white sm:w-[8rem]"
-                />
-              </div>
-            </div>
-          </React.Fragment>
-        ))}
-      </div> */}
+      <Testimonials />
     </section>
   );
 };
